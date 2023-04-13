@@ -10,10 +10,7 @@ public class Player {
         playingCards=new ArrayList<>();
     }
     public void printCards(){
-        System.out.println("Player Id: "+ this.playerId+" cards are:");
-        for(Card card:getPlayingCards()){
-            System.out.println(card);
-        }
+        System.out.println("Player Id: "+ this.playerId+" cards are: "+getPlayingCards());
     }
     public int getIndexOfSameSuitOrFaceValue(Card lastCardOfDiscardPile){
         if(lastCardOfDiscardPile==null){

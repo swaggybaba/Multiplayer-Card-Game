@@ -9,17 +9,17 @@ public class Card {
 
     @Override
     public String toString() {
-        return faceValue+" "+suit;
+        return getFaceValue()+" "+getSuit();
     }
 
     public int getFaceValue() {
-        return faceValue;
+        return this.faceValue;
     }
     public void setFaceValue(int faceValue) {
         this.faceValue = faceValue;
     }
     public Suit getSuit() {
-        return suit;
+        return this.suit;
     }
     public void setSuit(Suit suit) {
         this.suit = suit;

@@ -17,26 +17,35 @@ public class Deck {
          */
         for(int value=1;value<=13;value++) {
             for(Suit suit:Suit.values()) {
-                cards.add(new Card(value,suit));
+                this.cards.add(new Card(value,suit));
             }
         }
         shuffle();
     }
     private void shuffle() {
-        int n=cards.size();
+        int n=getCards().size();
         Random random=new Random();
         for(int index=0;index<n;index++) {
             int randomPosition = index + random.nextInt(52 - index);
-            Card tmpCard = cards.get(index);
-            cards.set(index, cards.get(randomPosition));
-            cards.set(randomPosition, tmpCard);
+            Card tmpCard = getCards().get(index);
+            getCards().set(index, getCards().get(randomPosition));
+            getCards().set(randomPosition, tmpCard);
         }
     }
     public Card getCard(int index){
-        return cards.get(index);
+        return getCards().get(index);
+    }
+    public Card removeCardFromTop(){
+        if(getSize()==0){
+            return null;
+        }
+        return getCards().remove(cards.size()-1);
+    }
+    public int getSize(){
+        return getCards().size();
     }
     public List<Card> getCards() {
-        return cards;
+        return this.cards;
     }
 
     public void setCards(List<Card> cards) {
