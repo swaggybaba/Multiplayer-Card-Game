@@ -32,7 +32,9 @@ public class Deck {
             cards.set(randomPosition, tmpCard);
         }
     }
-
+    public Card getCard(int index){
+        return cards.get(index);
+    }
     public List<Card> getCards() {
         return cards;
     }
