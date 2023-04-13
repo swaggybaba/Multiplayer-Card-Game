@@ -9,9 +9,9 @@ Every Card can be indentified by two entities
 1. Face Value
 2. Suit {SPADE,CLUB,DIAMOND,HEART}
 
-Ace is assigned with Face Value=1
-2 is assigned with Face Value=2
-3 is assigned with Face Value=3
+Ace is assigned with Face Value=1 <br />
+2 is assigned with Face Value=2 <br />
+3 is assigned with Face Value=3 <br />
 .
 .
 10 is assigned with Face Value=10
