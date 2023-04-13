@@ -12,12 +12,12 @@ Every Card can be indentified by two entities
 Ace is assigned with Face Value=1 <br />
 2 is assigned with Face Value=2 <br />
 3 is assigned with Face Value=3 <br />
-.
-.
-10 is assigned with Face Value=10
-Jack is assigned with Face Value=11
-Queen is assigned with Face Value=12
-King is assigned with Face Value=13
+. <br />
+. <br />
+10 is assigned with Face Value=10 <br />
+Jack is assigned with Face Value=11 <br />
+Queen is assigned with Face Value=12 <br />
+King is assigned with Face Value=13 <br />
 
 ## Deck
 Deck has list of Card and shuffle method
