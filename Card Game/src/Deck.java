@@ -23,19 +23,21 @@ public class Deck {
         shuffle();
     }
     private void shuffle() {
-        for(Card card:cards) {
-            System.out.println(card);
-        }
         int n=cards.size();
         Random random=new Random();
         for(int index=0;index<n;index++) {
-            int randomPosition=index+random.nextInt(52-index);
-            Card tmpCard=cards.get(index);
+            int randomPosition = index + random.nextInt(52 - index);
+            Card tmpCard = cards.get(index);
             cards.set(index, cards.get(randomPosition));
             cards.set(randomPosition, tmpCard);
         }
-        for(Card card:cards) {
-            System.out.println(card);
-        }
+    }
+
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(List<Card> cards) {
+        this.cards = cards;
     }
 }
