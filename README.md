@@ -22,6 +22,9 @@ King is assigned with Face Value=13 <br />
 ## Deck
 Deck has list of Card and shuffle method
 
+## Game
+For dump pile, we don't need to consider all cards, only last card is enough for a player to play a card <br />
 
 
+[output.pdf](https://github.com/swaggybaba/Multiplayer-Card-Game/files/11228373/output.pdf)
 
